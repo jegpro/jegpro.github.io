@@ -192,7 +192,7 @@
             font-size: 1.1rem;
             line-height: 1.8;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             max-width: 600px;
             text-align: justify;
             text-justify: inter-word;
@@ -346,7 +346,7 @@
         /* Consistent heading spacing for all sections */
         .profile-card h3 {
             margin-bottom: 2rem;
-            padding-top: 0.5rem;
+            padding-top: 1rem;
         }
 
         /* Adjust section spacing */
@@ -445,7 +445,7 @@
             gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .social-link {
@@ -596,7 +596,8 @@
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .contact-btn:hover {
@@ -610,7 +611,7 @@
             display: flex;
             gap: 2rem;
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: 0;
             flex-wrap: wrap;
         }
 
@@ -805,7 +806,7 @@
 
         .timeline-item {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             display: flex;
             align-items: center;
         }
@@ -850,21 +851,7 @@
         }
 
         .timeline-date {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--gradient-bg);
-            color: white;
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            white-space: nowrap;
-            z-index: 3;
-            top: 20px;
-            max-width: 200px;
-            text-align: center;
-            line-height: 1.2;
+            display: none;
         }
 
         .experience-title {
@@ -936,13 +923,13 @@
                 flex-direction: column !important;
                 align-items: flex-start;
                 margin-left: 2rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 2.5rem;
             }
 
             .timeline-content {
                 width: calc(100% - 2rem);
                 margin-left: 2rem;
-                margin-top: 10px;
+                margin-top: 15px;
                 padding: 1.5rem 1.5rem 2rem 1.5rem;
             }
 
@@ -950,14 +937,14 @@
                 left: -30px !important;
                 border-right-color: var(--border-color) !important;
                 border-left-color: transparent !important;
-                top: 15px;
+                top: 20px;
                 border-width: 10px;
             }
 
             .timeline-date {
-                left: 20px;
+                left: 50%;
                 transform: translateX(-50%);
-                top: -20px;
+                top: -30px;
                 font-size: 0.7rem;
                 padding: 0.2rem 0.5rem;
                 white-space: normal;
@@ -965,6 +952,7 @@
                 text-align: center;
                 line-height: 1.1;
                 word-break: break-word;
+                position: absolute;
             }
 
             .experience-title {
@@ -1032,15 +1020,18 @@
 
             .timeline-item {
                 margin-left: 1.5rem;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
 
             .timeline-date {
                 font-size: 0.65rem;
                 padding: 0.15rem 0.4rem;
                 max-width: 140px;
-                top: -18px;
+                top: -28px;
                 line-height: 1;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
             }
 
             .experience-title {
@@ -1133,7 +1124,7 @@
                     
                     <p class="profile-bio">
                         <i class="fas fa-map-marker-alt me-2" style="color: var(--primary-color);"></i>
-                        Based in Tallinn, Estonia
+                        Tallinn, Estonia
                         <br><br>
                         Senior QA Engineer with 3+ years of experience ensuring software quality through 
                         comprehensive testing strategies, process optimization, and team leadership.
@@ -1160,26 +1151,10 @@
                     </div>
 
                     <!-- Contact Button -->
-                    <a href="#contact" class="contact-btn">
+                    <a href="#contact" class="contact-btn" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
                         <i class="fas fa-paper-plane me-2"></i>
                         Get In Touch
                     </a>
-
-                    <!-- Achievements & Impact Section -->
-                    <div class="stats-section fade-in-up-delay">
-                        <div class="stat-item">
-                            <span class="stat-number">91%</span>
-                            <div class="stat-label">Test Coverage <span style="color: #4ade80; margin-left: 4px;">↗</span></div>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">74%</span>
-                            <div class="stat-label">Release Frequency <span style="color: #4ade80; margin-left: 4px;">↗</span></div>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <div class="stat-label">Years in Testing</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1276,7 +1251,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">Senior QA Engineer</div>
                                 <div class="experience-company">Kuehne+Nagel</div>
-                                <div class="experience-period">Apr 2025 - Present (5 mos)</div>
+                                <div class="experience-period">Apr 2025 - Present</div>
                                 <div class="experience-description">
                                     Lead test strategy and execution, overseeing comprehensive test plans for high-quality software delivery. 
                                     Drive process optimization and mentor teams, achieving 91% increase in test coverage and 74% increase 
@@ -1291,7 +1266,6 @@
                                     <span class="skill-tag">Communication</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">Apr 2025 - Present</div>
                         </div>
 
                         <!-- Experience Item 2 -->
@@ -1299,7 +1273,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">QA Engineer (Freelance)</div>
                                 <div class="experience-company">PRONK</div>
-                                <div class="experience-period">May 2024 - Oct 2024 (6 mos)</div>
+                                <div class="experience-period">May 2024 - Oct 2024</div>
                                 <div class="experience-description">
                                     Analyzed client requirements and defined test strategies for various projects in retail, 
                                     e-commerce, and EdTech domains. Designed and executed functional, UI, regression, and API tests. 
@@ -1314,7 +1288,6 @@
                                     <span class="skill-tag">JIRA</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">May - Oct 2024</div>
                         </div>
 
                         <!-- Experience Item 3 -->
@@ -1322,7 +1295,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">QA Engineer</div>
                                 <div class="experience-company">Kuehne+Nagel</div>
-                                <div class="experience-period">Jul 2022 - Apr 2025 (2 yrs 10 mos)</div>
+                                <div class="experience-period">Jul 2022 - Apr 2025</div>
                                 <div class="experience-description">
                                     Developed and executed test plans and test cases for logistics systems. Conducted comprehensive 
                                     manual testing including functional, usability, regression, smoke, API, E2E, and UI testing. 
@@ -1337,7 +1310,6 @@
                                     <span class="skill-tag">Test Planning</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">Jul 2022 - Apr 2025</div>
                         </div>
 
                         <!-- Experience Item 4 -->
@@ -1345,7 +1317,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">IT Support Engineer</div>
                                 <div class="experience-company">Kuehne+Nagel</div>
-                                <div class="experience-period">Apr 2021 - Jul 2022 (1 yr 4 mos)</div>
+                                <div class="experience-period">Apr 2021 - Jul 2022</div>
                                 <div class="experience-description">
                                     Provided 2nd level support for corporate Integrated Logistics and Tender Quotation Tool. 
                                     Performed system monitoring, incident management, and root cause analysis. Enhanced documentation 
@@ -1360,7 +1332,6 @@
                                     <span class="skill-tag">MongoDB</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">Apr 2021 - Jul 2022</div>
                         </div>
 
                         <!-- Experience Item 5 -->
@@ -1368,7 +1339,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">Process Engineer</div>
                                 <div class="experience-company">HHLA Hamburger Hafen und Logistik AG</div>
-                                <div class="experience-period">Jun 2019 - Apr 2021 (1 yr 11 mos)</div>
+                                <div class="experience-period">Jun 2019 - Apr 2021</div>
                                 <div class="experience-description">
                                     Prepared technological guidelines, schematics, and documentation for loading and securing goods. 
                                     Introduced new technological processes, developed loading plans for containers and platforms, 
@@ -1382,7 +1353,6 @@
                                     <span class="skill-tag">Guidelines Development</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">Jun 2019 - Apr 2021</div>
                         </div>
 
                         <!-- Experience Item 6 -->
@@ -1390,7 +1360,7 @@
                             <div class="timeline-content">
                                 <div class="experience-title">Engineering Trainee</div>
                                 <div class="experience-company">HHLA Hamburger Hafen und Logistik AG</div>
-                                <div class="experience-period">Apr 2019 - Jun 2019 (3 mos)</div>
+                                <div class="experience-period">Apr 2019 - Jun 2019</div>
                                 <div class="experience-description">
                                     Completed internship program in logistics domain, gaining foundational experience in 
                                     port operations, engineering processes, and logistics systems. Worked on-site to 
@@ -1403,7 +1373,6 @@
                                     <span class="skill-tag">Engineering Fundamentals</span>
                                 </div>
                             </div>
-                            <div class="timeline-date">Apr - Jun 2019</div>
                         </div>
                     </div>
                 </div>
